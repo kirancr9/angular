@@ -1,0 +1,34 @@
+<h3>  Employee Details </h3>
+<input type="button" value={{ititle}} (click)=IShow()>
+<br>
+<div *ngIf = "ishow">
+
+    <img src="../../assets/k.png">
+
+</div>
+
+<br>
+<br>
+
+<br>
+<input type="button" value={{dtitle}} (click)=FShow()>
+<br>
+
+<div *ngIf = "show">
+<ul style="list-style:none">
+  <li><h4>Name: {{name}}</h4></li>
+  <li><h4>Age: {{age}}</h4></li>
+  <li><h4>Salary: {{salary}}</h4></li>
+  <li><h4>E-mail {{email}}</h4></li>
+  <li><h4>Projects Assigned: </h4></li>
+  <li *ngFor = "let pr of proj">{{pr}}</li>
+  <li><h4>Contact Numbers: </h4></li>
+  <li *ngFor = "let nm of num">{{nm}}</li>
+  <li><h4>Address: {{address.street}},{{address.city}}</h4></li>
+  <li><h4>Hobbies:</h4></li>
+  <li *ngFor = "let hb of hobbies">{{hb}}</li>
+
+
+
+  </ul>
+</div>
