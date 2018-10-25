@@ -48,7 +48,6 @@ export class EmpComponent implements OnInit {
   }
 
   IShow() {
-    this.ishow=!this.ishow;
     if(this.ishow)
     this.ititle="Hide Image"
     else

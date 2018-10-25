@@ -1,0 +1,18 @@
+<h2 style=text-align:center>Calculator</h2>
+
+<div style=text-align:center>
+<input type="number" name="num1" [(ngModel)]="a">
+<input type="number" name="num2" [(ngModel)]="b">
+<br>
+<br>
+<div>
+    <input type="button" value="Sum" (click)=addition()>
+    <input type="button" value="Substract" (click)=subs()>
+    <input type="button" value="Mutiply" (click)=multi()>
+    <input type="button" value="Divide" (click)=divs()>
+</div>
+<div>{{ansadd}}</div>
+<div>{{anssub}}</div>
+<div>{{ansmul}}</div>
+<div>{{ansdiv}}</div>
+</div>
